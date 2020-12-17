@@ -6,7 +6,8 @@ function title(block){
 }
 
 function text(block){
-    return row(col(`<p>${block.value}</p>`))
+    const {tag='p'} = block.options
+    return row(col(`<${tag}>${block.value}</${tag}>`))
 }
 
 function columns(block){

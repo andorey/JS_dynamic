@@ -137,18 +137,23 @@ var model = [{
   options: {
     tag: 'h1',
     styles: {
-      background: 'linear-gradient(to right, #ff0099, #493240)',
+      background: 'linear-gradient(to right, #05f1e6, #023033)',
       color: '#fff',
+      // color: '#05f1e6',
+      // color: '#023033',
       'text-align': 'center',
       padding: '1.5rem'
     }
   }
 }, {
   type: 'text',
-  value: 'Some text about this file and my work on it'
+  value: 'Some text about this file and my work on it',
+  options: {
+    tag: 'h5'
+  }
 }, {
   type: 'columns',
-  value: ['first column about my attempt am not mistaken', 'second column on how it works in my browsers', 'third column is about how my mind was broken', 'fourth column is added how a test column ']
+  value: ['first column about my attempt am not mistaken', 'second column on how it works in my browsers', 'third column is about how my mind was broken']
 }, {
   type: 'image',
   value: _brain.default
@@ -199,7 +204,9 @@ function title(block) {
 }
 
 function text(block) {
-  return (0, _utils.row)((0, _utils.col)("<p>".concat(block.value, "</p>")));
+  var _block$options$tag2 = block.options.tag,
+      tag = _block$options$tag2 === void 0 ? 'p' : _block$options$tag2;
+  return (0, _utils.row)((0, _utils.col)("<".concat(tag, ">").concat(block.value, "</").concat(tag, ">")));
 }
 
 function columns(block) {
@@ -335,7 +342,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53086" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51943" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
