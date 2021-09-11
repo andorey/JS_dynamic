@@ -117,100 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"assets/brain.gif":[function(require,module,exports) {
-module.exports = "/brain.fb0a3ea0.gif";
-},{}],"model.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.model = void 0;
-
-var _brain = _interopRequireDefault(require("./assets/brain.gif"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var model = [{
-  type: 'title',
-  value: 'Dynamic website builder with js',
-  options: {
-    tag: 'h1',
-    styles: {
-      background: 'linear-gradient(to right, #05f44d, #0000ff)',
-      color: '#fff',
-      'text-align': 'center',
-      padding: '1.5 rem'
-    }
-  }
-}, {
-  type: 'text',
-  value: 'Some text about this file and my work on it',
-  options: {
-    tag: 'h5'
-  }
-}, {
-  type: 'columns',
-  value: ['First column  if I am not mistaken. What can I tell you about London? You don\'t have to trust me before you see!', 'Second column on how it works in my browsers', 'Third column is about how my mind was broken', 'The fourth column contains information about me']
-}, {
-  type: 'image',
-  value: _brain.default
-}];
-exports.model = model;
-},{"./assets/brain.gif":"assets/brain.gif"}],"utils.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.row = row;
-exports.col = col;
-
-function row(content) {
-  return "<div class=\"row\">".concat(content, "</div>");
-}
-
-function col(content) {
-  return "<div class=\"col-sm\">".concat(content, "</div>");
-} // export function css(styles){
-//     const toString = key => `${key}: ${styles[key]}`
-//     return Object.keys(styles).map(toString).join(';')
-// }
-},{}],"functions.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.templates = void 0;
-
-var _utils = require("./utils");
-
-function title(block) {
-  return (0, _utils.row)((0, _utils.col)("<h1>".concat(block.value, "</h1>")));
-}
-
-function text(block) {
-  return (0, _utils.row)((0, _utils.col)("<p>".concat(block.value, "</p>")));
-}
-
-function columns(block) {
-  var html = block.value.map(_utils.col).join('');
-  return (0, _utils.row)(html);
-}
-
-function image(block) {
-  return (0, _utils.row)("<img alt=\"image\" src=\"".concat(block.value, "\" />"));
-}
-
-var templates = {
-  title: title,
-  text: text,
-  columns: columns,
-  image: image
-};
-exports.templates = templates;
-},{"./utils":"utils.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -282,25 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-var _model = require("./model");
-
-var _functions = require("./functions");
-
-require("./styles/main.css");
-
-var $site = document.querySelector('#site');
-
-_model.model.map(function (block) {
-  var toHTML = _functions.templates[block.type];
-
-  if (toHTML) {
-    $site.insertAdjacentHTML('beforeend', toHTML(block));
-  }
-});
-},{"./model":"model.js","./functions":"functions.js","./styles/main.css":"styles/main.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -504,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/main.d2070829.js.map
