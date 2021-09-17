@@ -1,15 +1,14 @@
-
-function row(content){
-    return `<div class="row">${content}</div>`
+function row(content, styles=''){
+    return `<div class="row" style="${css(styles)}">${content}</div>`
 }
 
-function col(content){
-    return `<div class="col-sm">${content}</div>`
+function col(content, styles=''){
+    return `<div class="col-sm" style="${css(styles)}">${content}</div>`
 }
 
-// export function css(styles){
-//     const toString = key => `${key}: ${styles[key]}`
-//     return Object.keys(styles).map(toString).join(';')
-// }
+function css(styles){                               // styles object unpacking function
+    const toString = key => `${key}: ${styles[key]}`
+    return Object.keys(styles).map(toString).join(';')
+}
 
-export {row, col}
+export {row, col, css}

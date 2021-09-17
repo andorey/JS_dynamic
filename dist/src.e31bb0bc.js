@@ -140,21 +140,48 @@ var model = [{
       background: 'linear-gradient(to right, #05f44d, #0000ff)',
       color: '#fff',
       'text-align': 'center',
-      padding: '1.5 rem'
+      padding: '1.5rem'
+    }
+  }
+}, {
+  type: 'image',
+  value: _brain.default,
+  options: {
+    styles: {
+      padding: '1.5rem 0',
+      display: 'flex',
+      'justify-content': 'center'
+    },
+    styleImg: {
+      'border-radius': '5em',
+      width: '90%',
+      height: 'auto'
+    },
+    alt: 'image'
+  }
+}, {
+  type: 'columns',
+  value: ['First column  if I am not mistaken. What can I tell you about London? You don\'t have to trust me before you see!', 'Second column on how it works in my browsers', 'Third column is about how my mind was broken', 'The fourth column contains information about me'],
+  options: {
+    styles: {
+      background: 'linear-gradient(to top, #05d2f4, #0d073c)',
+      padding: '2rem',
+      color: '#fff',
+      'font-weight': 'bold'
     }
   }
 }, {
   type: 'text',
-  value: 'Some text about this file and my work on it',
+  value: '&nbsp;&nbsp;&nbsp;I really want to become a programmer and work with augmented reality. My dream is to start working for a famous company with a salary of about $ 20,000 for month.',
   options: {
-    tag: 'h5'
+    tag: 'p',
+    styles: {
+      background: 'linear-gradient(to left, #05f44d, #0000ff)',
+      color: '#fafb01',
+      padding: '1.5rem',
+      'font-weight': 'bold'
+    }
   }
-}, {
-  type: 'columns',
-  value: ['First column  if I am not mistaken. What can I tell you about London? You don\'t have to trust me before you see!', 'Second column on how it works in my browsers', 'Third column is about how my mind was broken', 'The fourth column contains information about me']
-}, {
-  type: 'image',
-  value: _brain.default
 }];
 exports.model = model;
 },{"./assets/brain.gif":"assets/brain.gif"}],"utils.js":[function(require,module,exports) {
@@ -165,17 +192,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.row = row;
 exports.col = col;
+exports.css = css;
 
 function row(content) {
-  return "<div class=\"row\">".concat(content, "</div>");
+  var styles = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+  return "<div class=\"row\" style=\"".concat(css(styles), "\">").concat(content, "</div>");
 }
 
 function col(content) {
-  return "<div class=\"col-sm\">".concat(content, "</div>");
-} // export function css(styles){
-//     const toString = key => `${key}: ${styles[key]}`
-//     return Object.keys(styles).map(toString).join(';')
-// }
+  var styles = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+  return "<div class=\"col-sm\" style=\"".concat(css(styles), "\">").concat(content, "</div>");
+}
+
+function css(styles) {
+  // styles object unpacking function
+  var toString = function toString(key) {
+    return "".concat(key, ": ").concat(styles[key]);
+  };
+
+  return Object.keys(styles).map(toString).join(';');
+}
 },{}],"functions.js":[function(require,module,exports) {
 "use strict";
 
@@ -187,20 +223,33 @@ exports.templates = void 0;
 var _utils = require("./utils");
 
 function title(block) {
-  return (0, _utils.row)((0, _utils.col)("<h1>".concat(block.value, "</h1>")));
+  var _block$options = block.options,
+      _block$options$tag = _block$options.tag,
+      tag = _block$options$tag === void 0 ? 'h1' : _block$options$tag,
+      styles = _block$options.styles;
+  return (0, _utils.row)((0, _utils.col)("<".concat(tag, ">").concat(block.value, "</").concat(tag, ">")), styles);
 }
 
 function text(block) {
-  return (0, _utils.row)((0, _utils.col)("<p>".concat(block.value, "</p>")));
+  var _block$options2 = block.options,
+      _block$options2$tag = _block$options2.tag,
+      tag = _block$options2$tag === void 0 ? 'h1' : _block$options2$tag,
+      styles = _block$options2.styles;
+  return (0, _utils.row)((0, _utils.col)("<".concat(tag, ">").concat(block.value, "</tag>")), styles);
 }
 
 function columns(block) {
+  var styles = block.options.styles;
   var html = block.value.map(_utils.col).join('');
-  return (0, _utils.row)(html);
+  return (0, _utils.row)(html, styles);
 }
 
 function image(block) {
-  return (0, _utils.row)("<img alt=\"image\" src=\"".concat(block.value, "\" />"));
+  var _block$options3 = block.options,
+      styles = _block$options3.styles,
+      sI = _block$options3.styleImg,
+      alt = _block$options3.alt;
+  return (0, _utils.row)("<img alt=\"".concat(alt, "\" src=\"").concat(block.value, "\" style=\"").concat((0, _utils.css)(sI), "\"/>"), styles);
 }
 
 var templates = {
@@ -295,6 +344,7 @@ var $site = document.querySelector('#site');
 
 _model.model.map(function (block) {
   var toHTML = _functions.templates[block.type];
+  console.log(block);
 
   if (toHTML) {
     $site.insertAdjacentHTML('beforeend', toHTML(block));
@@ -328,7 +378,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53724" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58592" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

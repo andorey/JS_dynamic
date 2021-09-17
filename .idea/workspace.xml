@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ea6854-7f40-4cda-8605-173c45c25d4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.cache/08/7ec47a7ddce2f502394dfefb4804bc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/09/93771ee3908d7e052c7362e5413e15.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/11/76eab163b97fd99474b25922dbd5c6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/17/03561d05a2e06b30379be914bfc60e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/1c/460261a5b0b623746417ad10d438bf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/26/52e5a0b6185ff2a4ab311078608880.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/2b/7573a5ec14511e64db00e59bfbfa2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/2f/05cf16aced5930c82efefbb789108b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/2f/a699e4104912fc6ddaed403e788a33.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/4f/e392be151e3e499904a538df00a435.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/94/0d1b06275baea40af1771be1b99b91.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/94/f0f68b56f7ee20b4d93526a4379480.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/9f/8a69aa65aab60e3a601251ffdee66f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/fb/72c3a94011baf07baf50813db834eb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.cache/fd/2326256c296ea39a2938883d051bf8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/main.d2070829.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/main.d2070829.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/main.d2070829.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/main.d2070829.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src.2808dc92.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src.5d843319.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/4f/d8c4836f0558060941967122a064b2.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/4f/d8c4836f0558060941967122a064b2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/ea/34b50083a9e6ec5c16a95d0b32a1b3.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/ea/34b50083a9e6ec5c16a95d0b32a1b3.json" afterDir="false" />
+    <list default="true" id="67ea6854-7f40-4cda-8605-173c45c25d4b" name="Default Changelist" comment="description of models of methods and characteristics of classes">
+      <change beforePath="$PROJECT_DIR$/.cache/17/03561d05a2e06b30379be914bfc60e.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/17/03561d05a2e06b30379be914bfc60e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/1c/460261a5b0b623746417ad10d438bf.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/1c/460261a5b0b623746417ad10d438bf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/2b/7573a5ec14511e64db00e59bfbfa2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/2b/7573a5ec14511e64db00e59bfbfa2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/2f/05cf16aced5930c82efefbb789108b.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/2f/05cf16aced5930c82efefbb789108b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/9f/8a69aa65aab60e3a601251ffdee66f.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/9f/8a69aa65aab60e3a601251ffdee66f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/fb/72c3a94011baf07baf50813db834eb.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/fb/72c3a94011baf07baf50813db834eb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/fd/2326256c296ea39a2938883d051bf8.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/fd/2326256c296ea39a2938883d051bf8.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src.e31bb0bc.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src.e31bb0bc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src.e31bb0bc.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src.e31bb0bc.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src.e31bb0bc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src.e31bb0bc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src.e31bb0bc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src.e31bb0bc.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/acorn" beforeDir="false" />
@@ -13959,12 +13945,11 @@
       <change beforePath="$PROJECT_DIR$/node_modules/xtend/mutable.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/xtend/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/xtend/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14037,8 +14022,21 @@
       <workItem from="1608308326166" duration="1409000" />
       <workItem from="1608679282011" duration="301000" />
       <workItem from="1609552615256" duration="46000" />
-      <workItem from="1631303063684" duration="16692000" />
+      <workItem from="1631303063684" duration="17304000" />
+      <workItem from="1631358599005" duration="312000" />
+      <workItem from="1631358948862" duration="11414000" />
+      <workItem from="1631709346262" duration="1325000" />
+      <workItem from="1631733506851" duration="385000" />
+      <workItem from="1631821579906" duration="4507000" />
     </task>
+    <task id="LOCAL-00001" summary="restructuring the apps with new modules parcel&amp;bundler">
+      <created>1631358271491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631358271491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -14058,5 +14056,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="restructuring the apps with new modules parcel&amp;bundler" />
+    <MESSAGE value="description of models of methods and characteristics of classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="description of models of methods and characteristics of classes" />
   </component>
 </project>
